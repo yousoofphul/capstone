@@ -1,0 +1,12 @@
+
+This business problem will require data from various sources (data sets) and while different parts of that already exist out there, it may be challenging to bring it all together to show the user what s/he wants.  What we need is :
+
+(1) Location Data (maps) 
+(2) Weather data  web scraping from the weather network web site
+(3) Attractions data (Venues and Tips from Foursquare
+(4) Crowd source data .. User reviews, user recommendations
+(5) Photos of the place - scrape from web, create photo storage database
+
+This is just a summary of the various types of data and data sources needs for this project. In the next section will provide detail report on this data and how it can be used to do what this project is about.
+
+Of note here this is an idea that will evolve with time as it is has for improvements based on you guessed it, reviews from people using it.
