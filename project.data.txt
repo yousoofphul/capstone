@@ -1,3 +1,25 @@
+PROJECT IDEA
+------------
+
+As I was thinking about an idea for this project and something comes to mind, I browse around and found out that something already exist. 
+So I started thinking that the beauty about the web is that there is so much stuff all over the place, but this can also be a weakness of the web. 
+What I want is EASE OF USE of any data out there, like mine the data that is out there and give me straight results. 
+
+This idea was somewhat inspired by the CP24 channel where no matter how small the screen is they show us news, weather, stock quotes, sports scores and so on. 
+Similarly my idea is to be able to prospective tourist as much information as possible using 1 app and if possible on one screen. 
+However it may be hard to make one screen as informative as the CP24 channel but can provide links to further drill down.
+
+Let's say you want to go visit a new city for the first time and you want to know a lot about the city , 
+you will probably look for the attractions in the city and then read about each one. 
+Then you will probably do another search to see what is the weather like in this city now and on average how warm or how cold it gets. 
+You probably already exhausted by now. Next time you will come back and search on the people, restaurants, ethnicity etc. 
+
+How about getting all this information in 1 shot but putting the city name and a few other information and everything gets presented to you on the landing page. 
+And then you have the opportunity to drill down and get more information.
+
+
+PROJECT DATA
+-------------
 
 This business problem will require data from various sources (data sets) and while different parts of that already exist out there, it may be challenging to bring it all together to show the user what s/he wants.  What we need is :
 
