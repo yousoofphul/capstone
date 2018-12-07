@@ -1,34 +1,30 @@
-PROJECT IDEA
-------------
 
-As I was thinking about an idea for this project and something comes to mind, I browse around and found out that something already exist. 
-So I started thinking that the beauty about the web is that there is so much stuff all over the place, but this can also be a weakness of the web. 
-What I want is EASE OF USE of any data out there, like mine the data that is out there and give me straight results. 
+1. Introduction/Business Problem
+New Business venture in a new city
+Often times a new business start and then collapse within the first year, in fact statistics have shown that most unsuccessful business will close within the first 12 months. So it is imperative that before starting a new business one has to do a lot of homework about WHERE to open the business to maximize its probability of survival and also make it successful in the long run.
 
-This idea was somewhat inspired by the CP24 channel where no matter how small the screen is they show us news, weather, stock quotes, sports scores and so on. 
-Similarly my idea is to be able to prospective tourist as much information as possible using 1 app and if possible on one screen. 
-However it may be hard to make one screen as informative as the CP24 channel but can provide links to further drill down.
+This project is about finding the best location to open a new business such as a restaurant in a new city like Toronto or New York with focus on ethnicity and population of each region of the city. Other considerations can be weather and transit access but those will not be detailed much. This would probably be future work.
 
-Let's say you want to go visit a new city for the first time and you want to know a lot about the city , 
-you will probably look for the attractions in the city and then read about each one. 
-Then you will probably do another search to see what is the weather like in this city now and on average how warm or how cold it gets. 
-You probably already exhausted by now. Next time you will come back and search on the people, restaurants, ethnicity etc. 
+Let’s call it the Recommendation Project. 
 
-How about getting all this information in 1 shot but putting the city name and a few other information and everything gets presented to you on the landing page. 
-And then you have the opportunity to drill down and get more information.
+Venue :  New Indian restaurant in Toronto
 
+2. Data Requirements
+The following methods and techniques will be used to gather the required data to go about solving this problem:
 
-PROJECT DATA
--------------
+1.	Get  Toronto neighborhood data with their geographical information like latitude and longitude.
 
-This business problem will require data from various sources (data sets) and while different parts of that already exist out there, it may be challenging to bring it all together to show the user what s/he wants.  What we need is :
+SOURCES :  
 
-(1) Location Data (maps) 
-(2) Weather data  web scraping from the weather network web site
-(3) Attractions data (Venues and Tips from Foursquare
-(4) Crowd source data .. User reviews, user recommendations
-(5) Photos of the place - scrape from web, create photo storage database
+Postal Codes information from Wikipedia to provide neighborhood details such as Borough and population etc
+     https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 
-This is just a summary of the various types of data and data sources needs for this project. In the next section will provide detail report on this data and how it can be used to do what this project is about.
+This page will have to be scraped, cleansed and enriched. Then it will have to be transformed into STRUCTURED FORMAT using pandas dataframe.
 
-Of note here this is an idea that will evolve with time as it is has for improvements based on you guessed it, reviews from people using it.
+Next we need to get Geographical coordinates of each postal code is available as CSV file at url 'http://cocl.us/Geospatial_data'. These coordinates data have to be read and merged with data specified in Step 1 so that the new format would like below:
+New Data Format with geographical coordinates: Postal Code, Borough, Neighborhood, Latitude, Longitude
+
+2. For each neighborhood, use Foursquare location data to gather all its different venues and categories
+Foursquare location data would be collected in the following format against each neighborhood: Neighborhood, Neighborhood Latitude, Neighborhood Longitude, Venue, Venue Latitude, Venue Longitude, Venue Category
+Cluster the Neighborhoods and to evaluate results based on Top 5 neighborhoods picked randomly or manually.
+
